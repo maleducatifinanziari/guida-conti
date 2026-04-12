@@ -622,9 +622,11 @@
        ============================================================ -->
   <script>
     function ml_webform_success_35881408() {
-      var $ = ml_jQuery || jQuery;
-      $('.ml-subscribe-form-35881408 .row-success').show();
-      $('.ml-subscribe-form-35881408 .row-form').hide();
+      try {
+        window.top.location.href = 'https://guida.maleducatifinanziari.com/thank-you.html';
+      } catch (e) {
+        window.location.href = 'https://guida.maleducatifinanziari.com/thank-you.html';
+      }
     }
   </script>
   <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v176e10baa5e7ed80d35ae235be3d5024" type="text/javascript"></script>
